@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
 ENV LANG=ja_JP.UTF-8
 ENV TZ=Asia/Tokyo
 
+EXPOSE 8000
+
 WORKDIR /app
 
 COPY . /app
